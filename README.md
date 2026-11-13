@@ -2,6 +2,14 @@
 
 A containerized FastAPI application that serves binary heart disease predictions (`heart_disease: true/false`) using a `RandomForestClassifier` trained on the Kaggle [Heart Disease Dataset](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset).
 
+## Live Deployment (Render)
+
+- **Live Web UI**: [https://heart-disease-prediction-jg1t.onrender.com/](https://heart-disease-prediction-jg1t.onrender.com/)
+- **Swagger UI (`/docs`)**: [https://heart-disease-prediction-jg1t.onrender.com/docs](https://heart-disease-prediction-jg1t.onrender.com/docs)
+- **ReDoc (`/redoc`)**: [https://heart-disease-prediction-jg1t.onrender.com/redoc](https://heart-disease-prediction-jg1t.onrender.com/redoc)
+- **Health Check (`/health`)**: [https://heart-disease-prediction-jg1t.onrender.com/health](https://heart-disease-prediction-jg1t.onrender.com/health)
+- **Model Info (`/info`)**: [https://heart-disease-prediction-jg1t.onrender.com/info](https://heart-disease-prediction-jg1t.onrender.com/info)
+
 ## Project Structure
 
 ```text
@@ -141,4 +149,4 @@ uvicorn app.main:app --reload --port 8001
    - **Root Directory**: Leave blank if this project is at the repo root (or set to `heart-disease-prediction` if pushed inside a monorepo).
    - **Instance Type**: Free
 5. Click **Create Web Service** and wait for the build to complete.
-6. Test your live deployment at `https://<your-service-name>.onrender.com/docs`.
+6. Test your live deployment at [https://heart-disease-prediction-jg1t.onrender.com/docs](https://heart-disease-prediction-jg1t.onrender.com/docs).
