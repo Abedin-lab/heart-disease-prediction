@@ -149,4 +149,4 @@ uvicorn app.main:app --reload --port 8001
    - **Root Directory**: Leave blank if this project is at the repo root (or set to `heart-disease-prediction` if pushed inside a monorepo).
    - **Instance Type**: Free
 5. Click **Create Web Service** and wait for the build to complete.
-6. Test your live deployment at [https://heart-disease-prediction-jg1t.onrender.com/docs](https://heart-disease-prediction-jg1t.onrender.com/docs).
+6. Test your live deployment at [https://heart-disease-prediction-jg1t.onrender.com/](https://heart-disease-prediction-jg1t.onrender.com/).
