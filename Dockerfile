@@ -18,7 +18,7 @@ COPY app/ ./app/
 # Ensure model artifact is compatible with the container's scikit-learn version
 RUN python train_model.py
 
-EXPOSE 8000
+EXPOSE 8001
 
-# Run FastAPI via uvicorn (respects Render's $PORT if provided, defaults to 8000)
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}"]
+# Run FastAPI via uvicorn (respects Render's $PORT if provided, defaults to 8001)
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8001}"]

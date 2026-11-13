@@ -59,8 +59,8 @@ docker-compose up
 
 ### 3. Access Swagger UI
 Open your browser and navigate to:
-- **Swagger UI**: http://localhost:8000/docs
-- **ReDoc**: http://localhost:8000/redoc
+- **Swagger UI**: http://127.0.0.1:8001/docs
+- **ReDoc**: http://127.0.0.1:8001/redoc
 
 ---
 
@@ -68,18 +68,18 @@ Open your browser and navigate to:
 
 ### Health Check (`GET /health`)
 ```bash
-curl -X GET http://localhost:8000/health
+curl -X GET http://127.0.0.1:8001/health
 ```
 
 ### Model Info (`GET /info`)
 ```bash
-curl -X GET http://localhost:8000/info
+curl -X GET http://127.0.0.1:8001/info
 ```
 
 ### Predict Heart Disease (`POST /predict`)
 **Positive Example (`heart_disease: true`):**
 ```bash
-curl -X POST http://localhost:8000/predict \
+curl -X POST http://127.0.0.1:8001/predict \
   -H "Content-Type: application/json" \
   -d '{
     "age": 58,
@@ -100,7 +100,7 @@ curl -X POST http://localhost:8000/predict \
 
 **Negative Example (`heart_disease: false`):**
 ```bash
-curl -X POST http://localhost:8000/predict \
+curl -X POST http://127.0.0.1:8001/predict \
   -H "Content-Type: application/json" \
   -d '{
     "age": 52,
@@ -126,7 +126,7 @@ curl -X POST http://localhost:8000/predict \
 ```bash
 pip install -r requirements.txt
 python train_model.py
-uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --reload --port 8001
 ```
 
 ---
